@@ -72,6 +72,8 @@ public class MoveWrist extends Command {
     	if(setPoint < 0) {
     		setPoint = setPoint * -1; // turns a negative set-point positive
     		speed = speed * -1; // sets the speed negative for reverse
+    		isGoingDown = false;
+    	} else {
     		isGoingDown = true;
     	}
     	
