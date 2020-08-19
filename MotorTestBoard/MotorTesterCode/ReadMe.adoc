@@ -1,0 +1,7 @@
+:Author: digitalcursor
+:Email: {AuthorEmail}
+:Date: 17/08/2020
+:Revision: version#
+:License: Public Domain
+
+Exported from Arduino.cc
