@@ -34,7 +34,8 @@ public class RobotContainer {
     // Configure the button bindings
     configureButtonBindings();
    final JoystickButton joystickButton11 = new JoystickButton(joystick, 11);
-   joystickButton11.whenPressed();
+   joystickButton11.whenPressed(new RunCommand(() -> m_driveBaseTyler.switchMotorMode(), m_driveBaseTyler));
+
   }
 
   /**
