@@ -32,6 +32,8 @@ public class RobotContainer {
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
     // Configure the button bindings
+    m_driveBaseTyler.setDefaultCommand(new RunCommand(() -> m_driveBaseTyler.teleopDrive(joystick.getY(), joystick.getX()), m_driveBaseTyler));
+
     configureButtonBindings();
    final JoystickButton joystickButton11 = new JoystickButton(joystick, 11);
    joystickButton11.whenPressed(new RunCommand(() -> m_driveBaseTyler.switchMotorMode(), m_driveBaseTyler));
