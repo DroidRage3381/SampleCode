@@ -67,6 +67,6 @@ public driveBaseTyler() {
 
   }
   public void teleopDrive(double speed, double turn) {
-    drive.arcadeDrive(speed, turn);
+    drive.arcadeDrive(speed, -turn);
   }
 }
